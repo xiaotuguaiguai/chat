@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/friendRecycle"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        >
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_back"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_back_white"
+            />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:id="@+id/fragent_title"
+            android:text="朋友圈"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布"
+                android:textColor="#19B390"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/commite1"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/commite"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_commite_camera"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:minHeight="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/send_layout"
+        android:background="#fff"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/send_content"
+            android:layout_toLeftOf="@+id/emojicon"
+
+            android:layout_marginLeft="10dp"
+            android:hint="评论"
+            android:minHeight="30dp"
+            android:textSize="14sp"
+            android:theme="@style/MyEditText"
+            android:layout_alignParentBottom="true"
+
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/logo"
+            android:id="@+id/emojicon"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:layout_width="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="40dp" />
+        <Button
+            android:text="发送"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+
+            android:id="@+id/sendBtn"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/send_circle_shape"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/_21bf33"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/sendBtn"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContactItemView">
+        <attr name="contactItemImage" format="reference"/>
+        <attr name="contactItemName" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CustomRow">
+
+        <attr name="left_text" format="string" />
+        <attr name="left_button_drawable" format="reference|integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomTextRow">
+
+        <attr name="text_left_text" format="string" />
+        <attr name="boolean_line" format="boolean"/>
+    </declare-styleable>
+
+</resources>

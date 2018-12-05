@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quchattext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6F5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ease_mm_title_back"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:id="@+id/fragent_title"
+            android:text="账户设置"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"
+        />
+    <com.quchat.widget.CustomTextRow
+        android:id="@+id/phone_layout"
+        quchattext:text_left_text="手机号"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </com.quchat.widget.CustomTextRow>
+
+
+    <com.quchat.widget.CustomTextRow
+        android:id="@+id/quxin_layout"
+        quchattext:text_left_text="趣信号"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp">
+
+    </com.quchat.widget.CustomTextRow>
+
+    <com.quchat.widget.CustomTextRow
+        quchattext:text_left_text="修改密码"
+        android:layout_width="match_parent"
+        android:id="@+id/psw_layout"
+        android:layout_height="50dp">
+
+    </com.quchat.widget.CustomTextRow>
+
+
+</LinearLayout>

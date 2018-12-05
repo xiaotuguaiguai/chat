@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:background="#fff"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical" >
+
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/prompt"
+            android:textColor="#181A1D"
+            android:visibility="visible"
+
+            android:textSize="17sp" />
+       
+ 
+        <TextView
+            android:id="@+id/alert_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:padding="5dp"
+            android:textColor="#5F5F5F"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="#19B390"
+                android:layout_marginRight="5dp"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:text="确定"
+                android:textColor="#19B390"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

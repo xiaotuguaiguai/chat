@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="43dp"
+    android:id="@+id/choose_layout"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <com.hyphenate.easeui.widget.CircleImageView
+            android:layout_marginTop="28dp"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:id="@+id/imagess"
+            android:src="@drawable/ease_default_avatar"
+            />
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/namess"
+            android:singleLine="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="#3C3C3C"
+            android:text="添加"
+            />
+</LinearLayout>

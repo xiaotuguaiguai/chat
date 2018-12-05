@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:id="@+id/title"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#252525"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/fragent_title"
+            android:text="@string/app_name"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/search"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/em_search_bar_icon_normal"
+                />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:src="@drawable/em_add"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:id="@+id/goneText"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <RelativeLayout
+            android:id="@+id/btn_container_conversation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:onClick="onTabClicked"
+                android:id="@+id/btn_conversation"
+                >
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="24dp"
+                    android:id="@+id/tab1_img"
+                    android:src="@drawable/em_conversation_selected"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab1_text"
+                    android:textSize="12sp"
+                    android:textColor="@color/top_bar_normal_bg"
+                    android:text="@string/session"
+                    android:layout_gravity="center_horizontal"
+
+                    />
+                <!--android:textColor="@color/em_main_botton_text_color"-->
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/btn_conversation"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/em_unread_count_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_address_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:onClick="onTabClicked"
+                android:id="@+id/btn_address_list"
+                >
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="24dp"
+                    android:id="@+id/tab2_img"
+                    android:src="@drawable/em_contact_list_normal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab2_text"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:textColor="@color/gray_normal"
+                    android:text="@string/address_book"
+                    />
+                <!--android:textColor="@color/em_main_botton_text_color"-->
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/unread_address_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_address_list"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/em_unread_dot"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/btn_container_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:onClick="onTabClicked"
+                android:id="@+id/btn_find"
+                >
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="24dp"
+                    android:id="@+id/tab3_img"
+                    android:src="@drawable/em_find_normal"
+                    />
+                <TextView
+                    android:textColor="@color/gray_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab3_text"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="发现"
+                    />
+                <!--android:textColor="@color/em_main_botton_text_color"-->
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/btn_container_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:onClick="onTabClicked"
+                android:id="@+id/btn_setting"
+                >
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="24dp"
+                    android:id="@+id/tab4_img"
+                    android:src="@drawable/em_settings_normal"
+                    />
+                <TextView
+                    android:textColor="@color/gray_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab4_text"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我"
+                    />
+                <!--android:textColor="@color/em_main_botton_text_color"-->
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/line"
+        android:layout_above="@+id/main_bottom"
+        android:background="#e5e5e5" />
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_above="@id/line" />
+
+</RelativeLayout>

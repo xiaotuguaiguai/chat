@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:quchat="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f6f5"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f6f5"
+        />
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="朋友圈"
+        android:id="@+id/friend"
+        quchat:left_button_drawable="@drawable/icon_friend"
+        >
+
+    </com.quchat.widget.CustomRow>
+
+
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="扫一扫"
+        android:id="@+id/scan"
+        android:layout_marginTop="10dp"
+        quchat:left_button_drawable="@drawable/icon_scan"
+        >
+
+    </com.quchat.widget.CustomRow>
+
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="游戏中心"
+       android:id="@+id/game"
+        android:layout_marginTop="10dp"
+        quchat:left_button_drawable="@drawable/icon_game"
+        >
+
+    </com.quchat.widget.CustomRow>
+
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="我的二维码"
+        android:layout_marginTop="10dp"
+        android:id="@+id/code"
+        quchat:left_button_drawable="@drawable/icon_my_code"
+        >
+
+    </com.quchat.widget.CustomRow>
+
+
+
+</LinearLayout>

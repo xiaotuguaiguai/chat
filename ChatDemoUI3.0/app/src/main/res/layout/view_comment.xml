@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    >
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2FACF0"
+        android:id="@+id/reply1"
+        android:textSize="15sp"
+        android:text="11"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回复"
+        android:textColor="#000"
+        android:id="@+id/replytip"
+        />
+    <TextView
+        android:textColor="#2FACF0"
+        android:id="@+id/reply2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+
+        />
+    <TextView
+        android:textColor="@color/gray_normal"
+        android:id="@+id/replyContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        />
+</LinearLayout>

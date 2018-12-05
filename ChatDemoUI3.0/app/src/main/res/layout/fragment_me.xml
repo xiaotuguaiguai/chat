@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quchat="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f6f5"
+    >
+ <RelativeLayout
+     android:background="#ffffff"
+     android:layout_width="match_parent"
+     android:layout_marginTop="1dp"
+     android:id="@+id/me_layout"
+     android:layout_height="100dp">
+
+         <com.quchat.widget.CircleImageView
+             android:id="@+id/face"
+             android:layout_width="69dp"
+             android:layout_height="69dp"
+             android:layout_marginLeft="16dp"
+             android:layout_centerVertical="true"
+             android:src="@drawable/logo"
+             />
+         <TextView
+             android:layout_toRightOf="@+id/face"
+             android:layout_alignTop="@+id/face"
+             android:layout_marginTop="10dp"
+             android:text="lunlun"
+             android:textColor="#181A1D"
+             android:layout_gravity="center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/nickName"
+             android:layout_marginLeft="15dp"
+             android:textSize="17sp"
+             />
+
+     <TextView
+         android:layout_toRightOf="@+id/face"
+         android:layout_marginLeft="15dp"
+         android:layout_alignBottom="@+id/face"
+         android:layout_marginBottom="8dp"
+         android:text=""
+         android:textColor="#7B7B7B"
+         android:layout_gravity="center_horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/userId"
+         android:textSize="15sp"
+         />
+
+
+ </RelativeLayout>
+
+    <com.quchat.widget.CustomRow
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/qrcode"
+        quchat:left_text="我的二维码"
+        android:visibility="gone"
+        quchat:left_button_drawable="@drawable/my_code"
+        >
+
+    </com.quchat.widget.CustomRow>
+
+    <com.quchat.widget.CustomRow
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="零钱包"
+        android:id="@+id/wallet"
+        quchat:left_button_drawable="@drawable/icon_money"
+        >
+
+    </com.quchat.widget.CustomRow>
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="店铺"
+        android:id="@+id/shop"
+        quchat:left_button_drawable="@drawable/icon_shop"
+        >
+
+    </com.quchat.widget.CustomRow>
+
+
+    <com.quchat.widget.CustomRow
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="收藏"
+        android:id="@+id/save"
+        quchat:left_button_drawable="@drawable/icon_save"
+        />
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="图片"
+        android:id="@+id/picture"
+        quchat:left_button_drawable="@drawable/icon_photo"
+        >
+
+    </com.quchat.widget.CustomRow>
+    <com.quchat.widget.CustomRow
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="隐私"
+        android:id="@+id/about"
+        quchat:left_button_drawable="@drawable/icon_secrect"
+        >
+
+    </com.quchat.widget.CustomRow>
+    <com.quchat.widget.CustomRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        quchat:left_text="设置"
+        android:id="@+id/setting"
+        android:layout_marginTop="10dp"
+        quchat:left_button_drawable="@drawable/my_setting"
+        >
+
+    </com.quchat.widget.CustomRow>
+</LinearLayout>

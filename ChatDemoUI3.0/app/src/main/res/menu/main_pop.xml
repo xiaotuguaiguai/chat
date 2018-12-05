@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/chat"
+        android:orderInCategory="100"
+        android:title="发起群聊"
+
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/add"
+        android:title="添加好友"
+        />
+
+    <item android:id="@+id/scan"
+        android:title="扫一扫"
+        />
+
+    <item android:id="@+id/help"
+        android:title="帮助"
+
+        />
+</menu>

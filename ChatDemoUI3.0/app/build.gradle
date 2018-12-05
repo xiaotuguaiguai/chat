@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "com.quchat"
+        minSdkVersion 16
+        targetSdkVersion 26
+        multiDexEnabled true
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('../quchat_key.jks')
+            storePassword 'quchat'
+            keyAlias 'key0'
+            keyPassword 'quchat'
+        }
+        debug {
+            storeFile file('../quchat_key.jks')
+            storePassword 'quchat'
+            keyAlias 'key0'
+            keyPassword 'quchat'
+        }
+    }
+    dexOptions {
+        incremental true
+        jumboMode true
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+	sourceSets {
+		main {
+			jniLibs.srcDirs = ['libs']
+		}
+	}
+}
+
+dependencies {
+    compile project(':easeui')
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.parse:parse-android:1.13.1'
+    compile 'com.android.support:multidex:1.0.1'
+    // Google firebase cloud messaging
+    compile 'com.google.firebase:firebase-messaging:11.4.0'
+    // bugly start
+    compile 'com.tencent.bugly:crashreport:2.6.6.1'
+    compile 'com.tencent.bugly:nativecrashreport:3.3.1'
+    // bugly end
+    compile project(':hmspush')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.lzy.net:okrx2:2.0.2'
+    compile 'com.lzy.net:okserver:2.0.5'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'pub.devrel:easypermissions:1.2.0'
+    compile 'com.github.yuzhiqiang1993:zxing:2.2.1'
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+    compile 'com.android.support:cardview-v7:27.1.1'
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.12@aar'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile files('/Users/quanlun/Downloads/pinyin4j-2.5.0/lib/pinyin4j-2.5.0.jar')
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'top.zibin:Luban:1.1.8'
+
+
+}
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}

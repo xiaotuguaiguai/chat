@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6F5"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#006055"
+        android:visibility="gone"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ease_mm_title_back"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back"
+            android:textColor="#ffff"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:id="@+id/fragent_title"
+            android:text="通讯录"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/search"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ease_blue_add"
+                />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ease_blue_add"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleView"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+    <com.quchat.widget.SideBar
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/sidebar"
+        />
+
+</RelativeLayout>
+
+</LinearLayout>

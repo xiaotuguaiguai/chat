@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEDEC"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back"
+           android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+
+            android:id="@+id/img_back"
+
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#181A1D"
+
+            android:textSize="17sp"
+            android:id="@+id/fragent_title"
+            android:text="支付方式"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_marginTop="13dp"
+        android:layout_height="59dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cash_wx"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/wx_logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="微信"
+            android:textSize="16sp"
+            android:layout_marginLeft="17dp"
+            android:textColor="#333333"
+            android:layout_toRightOf="@+id/wx_logo"
+            />
+        <ImageView
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:id="@+id/choose_wx_type"
+            android:src="@drawable/icon_wx_unchoose"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="下一步"
+        android:id="@+id/next"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/recharge_shape"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:quchattext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_back"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:id="@+id/fragent_title"
+            android:text="资料设置"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"
+        />
+    <com.quchat.widget.CustomTextRow
+        android:layout_marginTop="5dp"
+        android:id="@+id/note_layout"
+        quchattext:text_left_text="设置备注和标签"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </com.quchat.widget.CustomTextRow>
+
+
+    <com.quchat.widget.CustomTextRow
+        android:id="@+id/tuijian_layout"
+        quchattext:text_left_text="把他推荐给朋友"
+        android:layout_width="match_parent"
+        quchattext:boolean_line="false"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp">
+
+    </com.quchat.widget.CustomTextRow>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入黑名单"
+            android:textSize="15sp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="#3C3C3C"
+            />
+        <ImageView
+            android:id="@+id/kaiguan"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ease_close_icon"
+            />
+    </RelativeLayout>
+
+    <com.quchat.widget.CustomTextRow
+        android:id="@+id/tousu_layout"
+        quchattext:text_left_text="投诉"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        quchattext:boolean_line="false"
+        android:layout_height="50dp">
+
+    </com.quchat.widget.CustomTextRow>
+
+</LinearLayout>

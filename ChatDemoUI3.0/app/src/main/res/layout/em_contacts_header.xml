@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.quchat.widget.ContactItemView
+        android:id="@+id/application_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/icon_newfriend"
+        app:contactItemName="新的朋友" />
+
+    <com.quchat.widget.ContactItemView
+        android:id="@+id/group_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/icon_group"
+        app:contactItemName="@string/group_chat" />
+
+    <com.quchat.widget.ContactItemView
+        android:id="@+id/add_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:contactItemImage="@drawable/icon_add_friend"
+        app:contactItemName="添加好友" />
+
+    <com.quchat.widget.ContactItemView
+        android:id="@+id/chat_room_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:contactItemImage="@drawable/em_groups_icon"
+        app:contactItemName="@string/chat_room" />
+
+    <com.quchat.widget.ContactItemView
+        android:id="@+id/robot_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:contactItemImage="@drawable/em_groups_icon"
+        app:contactItemName="@string/robot_chat" />
+
+    <com.quchat.widget.ContactItemView
+        android:id="@+id/conference_item"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:contactItemImage="@drawable/em_chat_video_call_normal"
+        app:contactItemName="@string/voice_and_video_conference" />
+
+</LinearLayout>

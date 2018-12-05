@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9F9"
+    android:orientation="vertical"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/login_bg"
+                android:scaleType="centerCrop"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/green_back"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="登录"
+                        android:id="@+id/loginText"
+                        />
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/regiteText"
+                        android:text="注册"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/fl_home_container"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+

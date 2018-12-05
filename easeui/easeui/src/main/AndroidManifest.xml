@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hyphenate.easeui">
+
+<application>
+    <activity android:name=".ui.EaseRedPackageActivity" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+    <activity
+        android:name=".ui.MyRechargeActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/horizontal_slide"
+        />
+    <activity
+        android:name=".ui.ChatSettingDetailActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/horizontal_slide"
+        />
+
+</application>
+</manifest>
